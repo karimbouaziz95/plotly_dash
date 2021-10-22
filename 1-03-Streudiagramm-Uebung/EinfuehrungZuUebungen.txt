@@ -1,0 +1,20 @@
+Um diese Übungen abzuschliessen wirst du Python-Scripte schreiben,
+genau wie wir es in den vorherigen Beispielen getan haben.
+
+Unsere Importe sind dabei üblicherweise:
+import plotly.offline as pyo
+import plotly.graph_objs as go
+import pandas as pd
+
+Da das Internet nicht immer verlässlich ist, haven wir .csv-Dateien in diesem Ordner,
+die alle Anforderungen erfüllen.
+
+Das Verzeichnis mit Lösungen enthält *Lösungsvorschläge* für die Übungen.
+Deine Lösung kann sehr verschieden aussehen, was OK ist, solange sie tut, was du willst.
+
+Wenn du ein Script geschrieben hast, dass die gegebene Aufgabe erfüllt, mache
+eine Kopie der Datei und probiere ein paar Formatierungsoptionen aus.
+Versuche einen neuen Datensatz oder eine Kombination von Feldern. 
+Experimentiere nach belieben!
+
+Beachte wie immer das Forum für Hilfestellungen und stelle Fragen, wenn du hängen bleibst.

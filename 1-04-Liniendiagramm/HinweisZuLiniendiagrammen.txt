@@ -1,0 +1,4 @@
+Die Datei line2.py verwendet einen bearbeiteten Datensatz, welcher die Statistiken
+des U.S. Census Bureau auf die sechs New England Staaten reduziert. Um zu
+betrachten wie Pandas zum kürzen des originalen Datensatzes verwendet wurde,
+siehe line3.py.
