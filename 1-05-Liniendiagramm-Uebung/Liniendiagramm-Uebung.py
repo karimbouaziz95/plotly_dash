@@ -10,7 +10,7 @@ import plotly.offline as pyo
 import plotly.graph_objs as go
 
 # Erzeuge ein Pandas DataFrame aus 2010YumaAZ.csv
-df = pd.read_csv('../DATA/2010YumaAZ.csv')
+df = pd.read_csv('DATA/2010YumaAZ.csv')
 days = ['TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY','SUNDAY','MONDAY']
 
 print(df)

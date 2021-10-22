@@ -10,7 +10,7 @@ import plotly.graph_objs as go
 import pandas as pd
 
 # Erzeuge ein Pandas DataFrame aus 2010YumaAZ.csv
-df = pd.read_csv('../DATA/2010YumaAZ.csv')
+df = pd.read_csv('DATA/2010YumaAZ.csv')
 days = ['TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY','SUNDAY','MONDAY']
 
 # Verwende eine Schleife (oder List Comprehension), um Linien für die Liste data zu erstellen

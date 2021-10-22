@@ -14,7 +14,7 @@ import plotly.figure_factory as ff
 
 
 # Erzeuge ein DataFrame aus der .csv-Datei:
-df = pd.read_csv("../DATA/iris.csv")
+df = pd.read_csv("DATA/iris.csv")
 print(df)
 
 # Definiere die Traces (Linien)

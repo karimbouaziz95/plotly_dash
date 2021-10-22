@@ -11,30 +11,27 @@ import plotly.graph_objs as go
 
 
 # Erzeuge ein DataFrame aus der .csv-Datei:
-df = pd.read_csv("../DATA/mpg.csv")
-print(df["displacement"])
-print(df.columns)
+df = pd.read_csv("DATA/mpg.csv")
+print(df)
+
 
 # Erzeuge data durch die Auswahl von Feldern für x, y und die Grösse der Marker
 data = [go.Scatter(
-        x = df["displacement"],
-        y = df["acceleration"],
-        text = df["name"],
-        mode = "markers",
-        marker = dict(size=df["weight"]/500,
-                      color=df["cylinders"],
-                      showscale = True)
-    )]
+    x=df['displacement'],
+    y=df['acceleration'],
+    text=df['name'],
+    mode='markers',
+    marker=dict(size=df['weight']/100)
+)]
 
 
 # Erzeuge ein Layout mit Titel und Achsenbeschriftungen
 layout = go.Layout(
-        title = "Vehicle acceleration vs. displacement",
-        xaxis = {"title": "Displacement"},
-        yaxis = {"title": "Acceleration"},
-        hovermode = "closest"
-        
-    )
+        title='Vehicle acceleration vs. displacement',
+        xaxis = dict(title = 'displacement'),
+        yaxis = dict(title = 'acceleration = seconds to reach 60mph'),
+        hovermode='closest'
+)
 
 
 # Erzeuge eine fig mit data & layout und plotte die fig

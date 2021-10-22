@@ -14,32 +14,37 @@ import plotly.graph_objs as go
 
 # Erzeuge ein DataFrame aus der .csv-Datei:
     
-df = pd.read_csv("../DATA/abalone.csv")
+df = pd.read_csv("DATA/abalone.csv")
 
 print(df)
 print(df.columns)
 
 # Nimm zwei zufällige Stichproben verschiedener Grössen:
+
 a = np.random.choice(df['rings'],30,replace=False)
 b = np.random.choice(df['rings'],100,replace=False)
 
 
-
 # Erzeuge eine Variable data mit zwei Boxplots:
-data = [go.Box(
-        y = a,
-        name = "A"),
+data = [
     go.Box(
-        y = b,
-        name = "B")
-    ]
+        y=a,
+        name='A'
+    ),
+    go.Box(
+        y=b,
+        name='B'
+    )
+]
 
 
 # Füge ein Layout hinzu
 layout = go.Layout(
-    title = "Comparison of two samples taken from the same population")
+    title = 'Comparison of two samples taken from the same population'
+)
 
 # Erzeuge eine fig mit data & layout und plotte die fig
-fig = go.Figure(data=data, layout=layout)
-pyo.plot(fig)
 
+
+fig = go.Figure(data=data, layout=layout)
+pyo.plot(fig, filename='solution5.html')
