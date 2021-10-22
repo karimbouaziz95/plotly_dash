@@ -8,40 +8,20 @@
 ######
 
 # Führe hier die Importe aus:
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
-import plotly.graph_objs as go
-import pandas as pd
 
 
 
 # Führe die Anwendung aus:
-app = dash.Dash()
+
 
 # Erzeuge ein DataFrame aus der .csv-Datei:
-df = pd.read_csv('../DATA/OldFaithful.csv')
+
 
 
 # Erzeuge ein Dash Layout, dass eine Graph-Komponente enthält:
-app.layout = html.Div([
-        dcc.Graph(
-                id = 'old_faithful',
-                figure = {
-                        'data': [go.Scatter(
-                                x = df['X'],
-                                y = df['Y'],
-                                mode = 'markers'
-                                
-                                )],
-                        'layout': go.Layout(title = 'Old Faithful')
-                        })
-        
-        ])
 
 # Füge den Server-Abschnitt hinzu:
-if __name__ == '__main__':
-    app.run_server()
+
 
 
 
