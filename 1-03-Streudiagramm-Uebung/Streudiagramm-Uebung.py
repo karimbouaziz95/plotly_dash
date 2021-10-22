@@ -14,27 +14,28 @@ import plotly.graph_objs as go
 
 
 # Definiere eine Datenvariable
-
-random_x = np.random.randn(1000)
-random_y = np.random.rand(1000)
+x = np.random.randn(1000)
+y = np.random.rand(1000)
 
 # Definiere das Layout
 layout = go.Layout(
-        title = "Streudiagramm Aufgabe",
-        xaxis = dict(title = "XXXXXXXXX"),
-        yaxis = dict(title = "YYYYYYYYYY"),
+        title = "Scatter pot ubung",
+        xaxis = {"title": "xxxxxx"},
+        yaxis = {"title": "yyyyyy"},
         hovermode = "closest"
     )
 
+
+
 # Erzeuge eine fig mit den Daten und dem Layout und plotte die fig
-fig = go.Figure(layout = layout)
+data = [go.Scatter(
+        x = x,
+        y = y,
+        mode = "markers",
+        marker = dict(color="#e3ae10")
+        
+    )]
 
-fig.add_trace(go.Scatter(
-            x = random_x,
-            y = random_y,
-            mode = "markers",
-            
-            
-    ))
+fig = go.Figure(data = data, layout = layout)
+pyo.plot(fig)
 
-pyo.plot(fig, filename="versuch.html")
