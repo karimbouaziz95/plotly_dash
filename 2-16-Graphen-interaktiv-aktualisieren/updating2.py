@@ -12,7 +12,7 @@ from numpy import random
 
 app = dash.Dash()
 
-df = pd.read_csv('../DATA/mpg.csv')
+df = pd.read_csv('DATA/mpg.csv')
 
 # Füge zum ausspreizen einen zufälligen "jitter" (Verschiebung) zu model_year hinzu
 df['year'] = df['model_year'] + random.randint(-4,5,len(df))*0.10
